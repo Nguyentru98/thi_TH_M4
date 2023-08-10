@@ -1,10 +1,10 @@
-import { Xe } from "../entity/car";
+import { Car } from "../entity/car";
 import {AppDataSource} from "../data-source";
 
 class CarService {
     private carRepository;
     constructor() {
-        this.carRepository = AppDataSource.getRepository(Xe);
+        this.carRepository = AppDataSource.getRepository(Car);
     }
 
     getAll = async () => {

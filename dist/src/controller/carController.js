@@ -19,7 +19,11 @@ class carController {
             res.json("sửa thành công");
         };
         this.findById = async (req, res) => {
-            let data = await this.carService.findById(req.query.id);
+            let data = await this.carService.finById(req.query.id);
+            res.json(data);
+        };
+        this.add = async (req, res) => {
+            let data = await this.carService.add(req.body);
             res.json(data);
         };
         this.carService = car_1.default;

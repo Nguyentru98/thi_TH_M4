@@ -1,4 +1,4 @@
-export declare class Xe {
+export declare class Car {
     id: number;
     name: string;
     price: number;

@@ -20,7 +20,7 @@ class CarService {
         this.finById = async (id) => {
             return await this.carRepository.find(id);
         };
-        this.carRepository = data_source_1.AppDataSource.getRepository(car_1.Xe);
+        this.carRepository = data_source_1.AppDataSource.getRepository(car_1.Car);
     }
 }
 exports.default = new CarService();

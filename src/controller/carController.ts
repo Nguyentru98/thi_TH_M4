@@ -22,9 +22,14 @@ class carController {
         res.json("sửa thành công");
     }
     findById =async (req: Request ,res: Response) => {
-        let data = await this.carService.findById(req.query.id)
+        let data = await this.carService.finById(req.query.id)
         res.json(data);
     }
+    add =async (req: Request ,res: Response) => {
+        let data = await this.carService.add(req.body)
+        res.json(data);
+    }
+
 
 }
 

@@ -9,31 +9,31 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Xe = void 0;
+exports.Car = void 0;
 const typeorm_1 = require("typeorm");
-let Xe = exports.Xe = class Xe {
+let Car = exports.Car = class Car {
 };
 __decorate([
     (0, typeorm_1.PrimaryGeneratedColumn)(),
     __metadata("design:type", Number)
-], Xe.prototype, "id", void 0);
+], Car.prototype, "id", void 0);
 __decorate([
     (0, typeorm_1.Column)({ type: 'varchar', length: 255 }),
     __metadata("design:type", String)
-], Xe.prototype, "name", void 0);
+], Car.prototype, "name", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", Number)
-], Xe.prototype, "price", void 0);
+], Car.prototype, "price", void 0);
 __decorate([
     (0, typeorm_1.Column)({ type: 'text' }),
     __metadata("design:type", String)
-], Xe.prototype, "company", void 0);
+], Car.prototype, "company", void 0);
 __decorate([
     (0, typeorm_1.Column)({ type: 'text' }),
     __metadata("design:type", String)
-], Xe.prototype, "status", void 0);
-exports.Xe = Xe = __decorate([
+], Car.prototype, "status", void 0);
+exports.Car = Car = __decorate([
     (0, typeorm_1.Entity)()
-], Xe);
+], Car);
 //# sourceMappingURL=car.js.map
